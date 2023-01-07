@@ -1,0 +1,137 @@
+:root {
+    --header-background: #303030;
+    --header-color: #ffffff;
+    --section-background: #ffffff;
+    --section-headings: #265e70;
+    --section-heading-motos: #4dbce9;
+    --carrossel-card-color: #ffffff;
+    --carrossel-card-background: #4dbce9bf;
+    --carrossel-card-price: #265e70;
+    --button-learn-more-background: #4dbce9;
+    --button-learn-more-color: #ffffff;
+}
+
+* {
+    font-family: 'Verdana';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--header-background);
+    color: var(--header-color);
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 48px;
+}
+
+section {
+    display: flex;
+    column-gap: 2rem;
+    padding: 3rem;
+    justify-content: space-around;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftSide,
+.rightSide {
+    text-align: center;
+}
+
+.leftSide>h2,
+.rightSide>h2 {
+    color: var(--section-headings);
+    margin-bottom: 2rem;
+    max-width: 614px;
+    font-weight: 400;
+}
+
+.rightSide h2 span {
+    color: var(--section-heading-motos);
+    font-weight: 700;
+}
+
+.carrossel {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.carrossel button {
+    border: none;
+    background-color: transparent;
+}
+
+.carrosselMotos {
+    display: flex;
+    max-width: 540px;
+    min-height: 540px;
+    overflow: hidden;
+    gap: 2rem;
+}
+
+.carrosselMotos li {
+    background-color: var(--carrossel-card-background);
+    border-radius: 15px;
+    color: var(--carrossel-card-color);
+    text-align: center;
+    min-width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.carrosselMotos li > h2 {
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.carrosselMotos li .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.carrosselMotos li .cards>h1 {
+    font-size: 31px;
+    font-weight: 400;
+}
+
+.carrosselMotos li .cards>h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.carrosselMotos li .cards>span {
+    background-color: var(--carrossel-card-color);
+    color: var(--carrossel-card-price);
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 27px;
+    padding: 0.5rem 2rem;
+}
+
+.learnMore {
+    padding: 1rem 2rem;
+    font-size: 39px;
+    font-weight: 700;
+    background-color: var(--button-learn-more-background);
+    color: var(--button-learn-more-color);
+    border: none;
+    border-radius: 15px;
+}
